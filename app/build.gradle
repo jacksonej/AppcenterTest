@@ -26,20 +26,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    
     flavorDimensions "default"
 
-    productFlavors{
-
-        create("prod") {
+    productFlavors {
+        prod {
             dimension("default")
         }
-        create("prodInternal") {
+        prodInternal {
             dimension("default")
         }
-        create("dev") {
+        dev {
             dimension("default")
         }
-
     }
 
     compileOptions {
