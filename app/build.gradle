@@ -30,13 +30,13 @@ android {
 
     productFlavors{
 
-        create("prod") { // or getByName("development")
+        create("prod") {
             dimension("default")
         }
-        create("prodInternal") { // or getByName("staging")
+        create("prodInternal") {
             dimension("default")
         }
-        create("dev") { // or getByName("production")
+        create("dev") {
             dimension("default")
         }
 
