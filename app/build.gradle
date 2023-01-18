@@ -30,21 +30,16 @@ android {
 
     productFlavors{
 
-        prod {
-
+        create("prod") { // or getByName("development")
+            dimension("default")
+        }
+        create("prodInternal") { // or getByName("staging")
+            dimension("default")
+        }
+        create("dev") { // or getByName("production")
+            dimension("default")
         }
 
-        prodInternal {
-
-        }
-
-        dev {
-
-        }
-
-        channel {
-          
-        }
     }
 
     compileOptions {
